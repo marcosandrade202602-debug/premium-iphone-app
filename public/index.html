@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no">
+<title>MEU MÊS — seu dinheiro, do seu jeito</title>
+<meta name="description" content="Controle financeiro pessoal com visual de app de iPhone: saldo disponível, cartões, contas, metas, orçamentos e assistente inteligente. Seus dados ficam no seu aparelho.">
+<meta name="theme-color" content="#f2f2f7" id="themeColor">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Meu Mês">
+<link rel="apple-touch-icon" href="/.netlify/images?url=/img/icon.png&w=180&h=180&fm=png">
+<link rel="icon" type="image/png" href="/.netlify/images?url=/img/icon.png&w=64&h=64&fm=png">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="stylesheet" href="/styles.css">
+<script>
+  // aplica o tema antes de pintar para evitar flash
+  try { var t = localStorage.getItem('meumes-theme') || 'auto';
+    document.documentElement.dataset.theme = t === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t; } catch (e) {}
+</script>
+</head>
+<body>
+<div class="desk-brand">
+  <img src="/.netlify/images?url=/img/icon.png&w=128&h=128&fm=webp" alt="">
+  <h1>Meu Mês</h1>
+  <p>Seu dinheiro do mês, com a clareza de um app de iPhone. Adicione à tela de início do seu celular para a experiência completa.</p>
+</div>
+<div id="shell">
+  <div id="page">
+    <div id="scroller"><div id="view"></div></div>
+    <header class="navbar" id="navbar"><div class="nl" id="navL"></div><div class="nt" id="navT"></div><div class="nr" id="navR"></div></header>
+    <nav class="tabbar" id="tabbar"></nav>
+  </div>
+</div>
+<script src="/js/core.js"></script>
+<script src="/js/smart.js"></script>
+<script src="/js/ui.js"></script>
+<script src="/js/views.js"></script>
+<script src="/js/forms.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

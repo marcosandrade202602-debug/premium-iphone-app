@@ -1,0 +1,12 @@
+{
+  "name": "meu-mes",
+  "private": true,
+  "type": "module",
+  "description": "MEU MÊS — controle financeiro pessoal com visual de app de iPhone",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.60.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^4.0.0"
+  }
+}
